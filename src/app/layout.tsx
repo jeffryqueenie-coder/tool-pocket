@@ -6,12 +6,16 @@ import AppNav from "@/components/AppNav";
 import AppFooter from "@/components/AppFooter";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://tool-pocket-eight.vercel.app"),
   title: {
     default: "ToolPocket — Developer Tools",
     template: "%s — ToolPocket",
   },
   description: "Fast, private developer tools that run entirely in your browser.",
   keywords: ["developer tools", "JSON formatter", "Base64", "hash generator", "QR code", "regex tester"],
+  verification: {
+    google: "9oczJjYcCwqPWKuNJVjMMJQcVDwCsp-tU_uXZnOryoc",
+  },
 };
 
 export default function RootLayout({
