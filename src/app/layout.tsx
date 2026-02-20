@@ -5,6 +5,7 @@ import "./globals.css";
 import { LocaleProvider } from "@/lib/i18n/context";
 import AppNav from "@/components/AppNav";
 import AppFooter from "@/components/AppFooter";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tool-pocket-eight.vercel.app"),
@@ -42,6 +43,7 @@ export default function RootLayout({
           </main>
           <AppFooter />
         </LocaleProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
