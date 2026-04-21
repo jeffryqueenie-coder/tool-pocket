@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import Link from "next/link";
 import "./globals.css";
 import { LocaleProvider } from "@/lib/i18n/context";
 import AppNav from "@/components/AppNav";
 import AppFooter from "@/components/AppFooter";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://tool-pocket-eight.vercel.app"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "ToolPocket — Developer Tools",
     template: "%s — ToolPocket",
